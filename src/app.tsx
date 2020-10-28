@@ -5,7 +5,7 @@ document.body.appendChild(mainElement);
 const App = () => {
     return (
         <h1>
-            Ouais re
+            Yo... leeeees... COOOOOOOOOOOOOOOOOOOOOOOOOOUZ
         </h1>
     )
 }
