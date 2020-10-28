@@ -8,10 +8,14 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
-        title: 'yo kent',
+        title: "ta gueule",
         webPreferences: {
             nodeIntegration: true,
         },
+    });
+
+    mainWindow.on('page-title-updated', function(e) {
+        e.preventDefault()
     });
 
     if (process.env.NODE_ENV === 'development') {
