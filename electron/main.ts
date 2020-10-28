@@ -14,6 +14,10 @@ function createWindow() {
         },
     });
 
+    mainWindow.on('page-title-updated', function(e) {
+        e.preventDefault()
+    });
+
     if (process.env.NODE_ENV === 'development') {
         mainWindow.loadURL(`http://localhost:4000`);
     } else {
