@@ -8,7 +8,7 @@ function createWindow() {
     mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
-        title: 'yo kent',
+        title: 'RSAGen_v1.0',
         webPreferences: {
             nodeIntegration: true,
         },
